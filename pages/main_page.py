@@ -1,4 +1,5 @@
 from selenium.webdriver.common.by import By
+
 from stepik_for_lesson4.pages.base_page import BasePage
 from .locators import MainPageLocators
 
