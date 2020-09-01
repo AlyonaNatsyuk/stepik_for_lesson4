@@ -2,7 +2,7 @@ from .base_page import BasePage
 from .locators import ProductPageLocators
 
 class ProductPage(BasePage):
-    def add_in_the_button(self):
+    def add_product_to_the_basket(self):
         add_to_cart_button = self.browser.find_element(*ProductPageLocators.BUTTON_ADD)
         add_to_cart_button.click()
 
