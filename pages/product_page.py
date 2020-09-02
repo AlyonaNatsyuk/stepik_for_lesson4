@@ -10,11 +10,11 @@ class ProductPage(BasePage):
         assert self.browser.find_element(*ProductPageLocators.SUCCESS_MESSAGE), "Success message doesn't correct"
 
     def should_be_message_product_added(self):
-        product_name_on_the_page = self.browser.find_element(*ProductPageLocators.PRODUCT_NAME_ON_THE_PAGE)
-        product_name_on_the_message = self.browser.find_element(*ProductPageLocators.PRODUCT_NAME_ON_THE_MESSAGE)
-        assert product_name_on_the_message == product_name_on_the_page, "Product names don't match"
+        product_name_on_the_page = self.browser.find_element(*ProductPageLocators.PRODUCT_NAME_ON_THE_PAGE).text
+        product_name_on_the_message = self.browser.find_element(*ProductPageLocators.PRODUCT_NAME_ON_THE_MESSAGE).text
+        assert product_name_on_the_page == product_name_on_the_message, "Product names don't match"
 
     def should_be_message_price_added(self):
-        price_on_the_page = self.browser.find_element(*ProductPageLocators.PRICE_ON_THE_PAGE)
-        price_on_the_message = self.browser.find_element(*ProductPageLocators.PRICE_ON_THE_MESSAGE)
+        price_on_the_page = self.browser.find_element(*ProductPageLocators.PRICE_ON_THE_PAGE).text
+        price_on_the_message = self.browser.find_element(*ProductPageLocators.PRICE_ON_THE_MESSAGE).text
         assert price_on_the_message == price_on_the_page, "Prices don't match"
