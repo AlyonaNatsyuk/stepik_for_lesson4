@@ -4,10 +4,17 @@ class MainPageLocators:
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
 
 class LoginPageLocators:
-    #locators for login form
+    # locators for login form
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
-    #locators for registerion form
+    # locators for registration form
     REG_FORM = (By.CSS_SELECTOR, "#register_form")
+    # registration new user
+    EMAIL = (By.CSS_SELECTOR, "#id_registration-email")
+    PASSWORD = (By.CSS_SELECTOR, "#id_registration-password1")
+    CONFIRM_PASSWORD = (By.CSS_SELECTOR, "#id_registration-password2")
+    BUTTON_REG = (By.CSS_SELECTOR, "[name='registration_submit']")
+    USER_ICON = (By.CSS_SELECTOR, ".icon-user")
+
 
 class ProductPageLocators:
     BUTTON_ADD = (By.CSS_SELECTOR, ".btn-add-to-basket")
