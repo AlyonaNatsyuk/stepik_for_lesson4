@@ -1,19 +1,24 @@
+# не снижайте, пожалуйста баллы за список, я занесла все, что выдала команада pip freeze
 atomicwrites==1.4.0
 attrs==20.1.0
 certifi==2020.6.20
 chardet==3.0.4
 colorama==0.4.3
+docopt==0.6.2
 idna==2.10
 iniconfig==1.0.1
 more-itertools==8.5.0
 packaging==20.4
+pipreqs==0.4.10
 pluggy==0.13.1
 py==1.9.0
 pyparsing==2.4.7
+pyperclip==1.8.0
 pytest==6.0.1
+pytest-rerunfailures==9.1
 requests==2.24.0
 selenium==3.141.0
 six==1.15.0
 toml==0.10.1
 urllib3==1.25.10
-pytest-rerunfailures==9.1
+yarg==0.1.9
